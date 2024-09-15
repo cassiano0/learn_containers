@@ -20,7 +20,7 @@ def index():
     result = cur.fetchone()
     cur.close()
     conn.close()
-    return f"Conexão com o banco de dados bem-sucedida site 2!! {result}"
+    return f"Conexão com o banco de dados bem-sucedida 2!! {result}"
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=80, debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
